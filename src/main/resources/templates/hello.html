@@ -1,0 +1,12 @@
+<div th:replace="~{layouts/header :: header(Login)}"/>
+<link th:href="@{/css/login.css}" rel="stylesheet">
+<section>
+    <div class="container-fluid px-4 px-lg-5 ">
+        <div class="row">
+            <h1>Привет, <span th:text="${user}"/>!!!</h1>
+        </div>
+    </div>
+</section>
+<div th:replace="~{layouts/footer :: footer(Login)}"/>
+
+
